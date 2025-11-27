@@ -1,0 +1,41 @@
+{
+  "name": "dobo-redis",
+  "version": "2.0.1",
+  "description": "Redis driver for Dobo",
+  "main": "index.js",
+  "scripts": {
+    "build-doc": "jsdoc -c .jsdoc.conf.json",
+    "test": "mocha"
+  },
+  "type": "module",
+  "bajo": {
+    "type": "plugin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardhi/dobo-redis.git"
+  },
+  "keywords": [
+    "redis",
+    "dobo",
+    "db",
+    "driver",
+    "bajo",
+    "framework",
+    "modular"
+  ],
+  "author": "Ardhi Lukianto <ardhi@lukianto.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ardhi/dobo-redis/issues"
+  },
+  "homepage": "https://github.com/ardhi/dobo-redis#readme",
+  "dependencies": {
+    "clickhouse": "^2.6.0",
+    "sqlstring": "^2.3.3"
+  },
+  "devDependencies": {
+    "clean-jsdoc-theme": "^4.3.0",
+    "jsdoc-plugin-intersection": "^1.0.4"
+  }
+}
