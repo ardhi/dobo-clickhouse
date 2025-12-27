@@ -12,7 +12,7 @@ async function factory (pkgName) {
    *
    * @class
    */
-  class DoboClickhouse extends this.app.pluginClass.base {
+  class DoboClickhouse extends this.app.baseClass.Base {
     static alias = 'dbclickhouse'
     static dependencies = ['dobo', 'dobo-knex']
 
@@ -24,9 +24,6 @@ async function factory (pkgName) {
     }
 
     exit = () => {
-      for (const instance of this.instances) {
-        instance.client.destroy()
-      }
     }
   }
 
