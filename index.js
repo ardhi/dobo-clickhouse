@@ -13,9 +13,6 @@ async function factory (pkgName) {
    * @class
    */
   class DoboClickhouse extends this.app.baseClass.Base {
-    static alias = 'dbclickhouse'
-    static dependencies = ['dobo', 'dobo-knex']
-
     constructor () {
       super(pkgName, me.app)
       this.config = {

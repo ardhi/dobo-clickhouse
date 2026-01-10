@@ -1,11 +1,11 @@
 import clientFactory from '../../../lib/dialect/client.js'
 
 async function clickhouseDriverFactory () {
-  const { KnexDriver } = this.app.doboKnex.baseClass
+  const { DoboKnexDriver } = this.app.baseClass
 
-  class ClickhouseDriver extends KnexDriver {
-    constructor (plugin, options) {
-      super(plugin, options)
+  class DoboClickhouseDriver extends DoboKnexDriver {
+    constructor (plugin, name, options) {
+      super(plugin, name, options)
       this.idField = {
         name: 'id',
         type: 'string',
@@ -41,7 +41,7 @@ async function clickhouseDriverFactory () {
     }
   }
 
-  return ClickhouseDriver
+  return DoboClickhouseDriver
 }
 
 export default clickhouseDriverFactory
