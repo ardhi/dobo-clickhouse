@@ -26,7 +26,7 @@ async function clickhouseDriverFactory () {
       item.database = item.database ?? 'default'
     }
 
-    async createClient (connection) {
+    async connect (connection, noRebuild) {
       const { importPkg } = this.app.bajo
       const knex = await importPkg('doboKnex:knex')
       const client = await clientFactory.call(this.plugin)
