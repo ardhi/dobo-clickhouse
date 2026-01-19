@@ -16,6 +16,8 @@ async function clickhouseDriverFactory () {
       this.idGenerator = 'uuidv7'
       this.defaultEngine = 'MergeTree'
       this.support.returning = false
+      this.support.uniqueIndex = false
+      this.support.nullableField = false
     }
 
     async sanitizeConnection (item) {
@@ -38,6 +40,16 @@ async function clickhouseDriverFactory () {
         },
         ...this.options
       })
+    }
+
+    async updateRecord (model, id, body = {}, options = {}) {
+      const oldData = options._data
+      const client = model.connection.client
+      const result = await client(model.collName).where('id', id).update(body, this._getReturningFields(model, options))
+      if (options.noResult) return
+      if (this.support.returning) return { data: result[0], oldData }
+      const resp = await this.getRecord(model, id)
+      return { data: resp.data, oldData }
     }
   }
 
