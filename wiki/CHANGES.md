@@ -3,6 +3,7 @@
 ## 2026-02-01
 
 - [2.2.3] Bug fix for query with regex
+- [2.2.4] Bug fix on query compiler
 
 ## 2026-01-30
 

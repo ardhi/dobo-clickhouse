@@ -1,6 +1,6 @@
 {
   "name": "dobo-clickhouse",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Clickhouse driver for Dobo",
   "main": "index.js",
   "scripts": {
