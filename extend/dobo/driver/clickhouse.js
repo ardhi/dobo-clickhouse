@@ -18,6 +18,7 @@ async function clickhouseDriverFactory () {
       this.support.returning = false
       this.support.uniqueIndex = false
       this.support.nullableField = false
+      this.support.transaction = false
       this.useUtc = true
     }
 

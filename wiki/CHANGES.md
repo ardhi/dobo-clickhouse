@@ -1,5 +1,9 @@
 # Changes
 
+## 2026-03-05
+
+- [2.3.0] Set ```driver.support.transaction``` to ```false```
+
 ## 2026-02-01
 
 - [2.2.3] Bug fix for query with regex
