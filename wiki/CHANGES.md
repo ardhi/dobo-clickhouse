@@ -1,8 +1,12 @@
 # Changes
 
+## 2026-07-12
+
+- [2.4.0] Update `driver` to `adapter`
+
 ## 2026-03-05
 
-- [2.3.0] Set ```driver.support.transaction``` to ```false```
+- [2.3.0] Set ```adapter.support.transaction``` to ```false```
 
 ## 2026-02-01
 

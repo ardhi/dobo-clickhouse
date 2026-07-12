@@ -4,7 +4,7 @@
 
 > <br />**Attention**: I do NOT accept any pull request at the moment, thanks! ([Why?](wiki/CONTRIBUTING.md))<br /><br />
 
-Clickhouse driver for [Dobo](https://github.com/ardhi/dobo)
+Clickhouse adapter for [Dobo](https://github.com/ardhi/dobo)
 
 ## Installation
 

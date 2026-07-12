@@ -1,7 +1,7 @@
 {
   "name": "dobo-clickhouse",
-  "version": "2.3.0",
-  "description": "Clickhouse driver for Dobo",
+  "version": "2.4.0",
+  "description": "Clickhouse adapter for Dobo",
   "main": "index.js",
   "scripts": {
     "build-doc": "jsdoc -c .jsdoc.conf.json",
@@ -21,7 +21,7 @@
     "clickhouse",
     "dobo",
     "db",
-    "driver",
+    "adapter",
     "bajo",
     "framework",
     "modular"
