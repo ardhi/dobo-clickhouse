@@ -1,5 +1,9 @@
 # Changes
 
+## 2026-07-14
+
+- [2.4.1] Bug fix in `client.js`
+
 ## 2026-07-12
 
 - [2.4.0] Update `driver` to `adapter`
